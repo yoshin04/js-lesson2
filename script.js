@@ -1,7 +1,6 @@
 'use strict';
 {
-  document.getElementById('button').addEventListener('click', e => {
-    e.preventDefault();
+  document.getElementById('button').addEventListener('click', () => {
     const fizz = document.getElementById('fizz').value;
     const buzz = document.getElementById('buzz').value;
     const pattern = /^[-]?([1-9]\d*|0)$/;
