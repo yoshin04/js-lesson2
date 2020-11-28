@@ -5,7 +5,7 @@
     const buzz = document.getElementById('buzz').value;
     const pattern = /^[-]?([1-9]\d*|0)$/;
     const ul = document.getElementById('list');
-    if (!(pattern.test(fizz) && pattern.test(buzz))) {
+    if (!(pattern.test(fizz)) || !(pattern.test(buzz))) {
       const li = document.createElement('li');
       li.textContent = '整数を入力して下さい。';
       ul.appendChild(li);
