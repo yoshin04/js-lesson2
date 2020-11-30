@@ -12,15 +12,20 @@
       return;
     }
     for (let i = 1; i < 100; i++) {
-      const li = document.createElement('li');
       if (i % fizz === 0 && i % buzz === 0) {
+        const li = document.createElement('li');
         li.textContent = i + 'FizzBuzz';
+        ul.appendChild(li);
       } else if (i % fizz === 0) {
+        const li = document.createElement('li');
         li.textContent = `${i} Fizz`;
+        ul.appendChild(li);
       } else if (i % buzz === 0) {
+        const li = document.createElement('li');
         li.textContent = `${i} Buzz`;
+        ul.appendChild(li);
       }
-      ul.appendChild(li);
+      
     }
   });
 }
